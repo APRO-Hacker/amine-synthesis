@@ -1,0 +1,121 @@
+body {
+    font-family: 'Georgia', serif;
+    font-size: 12pt;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #1B263B;
+    background-color: #FFFFFF;
+}
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1in;
+}
+h1 {
+    font-size: 16pt;
+    color: #1B263B;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1em;
+}
+h2 {
+    font-size: 14pt;
+    color: #1B263B;
+    font-weight: bold;
+    margin-top: 1.5em;
+}
+h3 {
+    font-size: 12pt;
+    color: #1B263B;
+    font-weight: bold;
+    margin-top: 1em;
+}
+p {
+    margin: 0.5em 0;
+}
+ul, ol {
+    margin: 0.5em 0;
+    padding-left: 2em;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1em 0;
+    font-size: 10pt;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+th, td {
+    border: 1px solid #D1D5DB;
+    padding: 0.5em;
+    text-align: left;
+}
+th {
+    background-color: #E5E7EB;
+    color: #1B263B;
+    font-weight: bold;
+}
+code {
+    font-family: 'Courier New', monospace;
+    background-color: #F3F4F6;
+    padding: 2px 4px;
+    border-radius: 3px;
+}
+.reaction {
+    margin: 1em 0;
+    padding: 0.5em;
+    background-color: #F9FAFB;
+    border-left: 4px solid #1B263B;
+    font-weight: bold;
+}
+nav {
+    background-color: #1B263B;
+    padding: 1em;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    font-family: 'Open Sans', sans-serif;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    margin: 0 1em;
+    font-size: 12pt;
+    transition: color 0.3s ease;
+}
+nav a:hover {
+    color: #60A5FA;
+}
+nav a.active {
+    font-weight: bold;
+    border-bottom: 2px solid #60A5FA;
+}
+@media screen and (max-width: 600px) {
+    .container {
+        padding: 0.5in;
+        font-size: 11pt;
+    }
+    nav a {
+        display: block;
+        margin: 0.5em 0;
+    }
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+}
+@media print {
+    body {
+        font-size: 12pt;
+        margin: 0.5in;
+        background-color: #FFFFFF;
+    }
+    nav {
+        display: none;
+    }
+    table {
+        page-break-inside: avoid;
+    }
+}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
